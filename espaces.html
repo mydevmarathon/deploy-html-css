@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les espaces - CoClock Working</title>
+
+    <!-- Import du style -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Utilisation de font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav aria-label="header navigation">
+            <a href="index.html" class="logo" title="Co'Clock Working" aria-label="accueil du site">
+                <img src="./coclockworking.png" alt="Logo de l'entreprise">
+            </a>
+
+            <h1>Co'coclockworking</h1>
+
+            <ul id="menu2" class="links" role="menu" aria-labelledby="menubutton">
+                <li role="none">
+                    <a role="menuitem" aria-label="Page d'accueil du site" href="index.html">Accueil</a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" aria-label="Page de réservation de salles" href="espaces.html">Réservation</a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" aria-label="Formulaire de connexion au site" href="login.html">Se connecter</a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" aria-label="Formulaire d'inscription au site" href="register.html">S'enregistrer</a>
+                </li>
+            </ul>
+
+            <button id="menubutton" aria-haspopup="true" aria-controls="menu-ul">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Bandeau contenant l'image -->
+        <div class="bandeau"></div>
+    </header>
+
+    <main aria-labelledby="title1">
+        <h2 id="title1">Nos espaces</h2>
+
+        <section class="spaces" aria-labelledby="space-title-1">
+            <div>
+                <h3 id="space-title-1">Open space #1</h3>
+                <p>Capacité : 10 personnes</p>
+                <p>Equipements : 2 écrans, 2 projecteurs, 2 micros, 2 casque audio</p>
+                <p>Prix : 100€ par jour</p>
+                <a href="login.html">Connectez-vous pour commenter</a>
+                <!-- <a href="#">Voir les commentaires et commenter</a> -->
+            </div>
+        </section>
+
+        <section class="spaces" aria-labelledby="space-title-2">
+            <div>
+                <h3 id="space-title-2">Open space #2</h3>
+                <p>Capacité : 5 personnes</p>
+                <p>Equipements : 1 écran, 1 micro</p>
+                <p>Prix : 50€ par jour</p>
+                <a href="login.html">Connectez-vous pour commenter</a>
+                <!-- <a href="#">Voir les commentaires et commenter</a> -->
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoClock Working</title>
+
+    <!-- Import du style -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Utilisation de font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav aria-label="header navigation">
+            <a href="index.html" class="logo" title="Co'Clock Working" aria-label="accueil du site">
+                <img src="./coclockworking.png" alt="Logo de l'entreprise">
+            </a>
+
+            <h1>Co'coclockworking</h1>
+
+            <ul id="menu2" class="links" role="menu" aria-labelledby="menubutton">
+                <li role="none">
+                    <a role="menuitem" aria-label="Page d'accueil du site" href="index.html">Accueil</a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" aria-label="Page de réservation de salles" href="espaces.html">Réservation</a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" aria-label="Formulaire de connexion au site" href="login.html">Se connecter</a>
+                </li>
+                <li role="none">
+                    <a role="menuitem" aria-label="Formulaire d'inscription au site" href="register.html">S'enregistrer</a>
+                </li>
+            </ul>
+
+            <button id="menubutton" aria-haspopup="true" aria-controls="menu-ul">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Bandeau contenant l'image -->
+        <div class="bandeau"></div>
+    </header>
+
+    <main aria-labelledby="title1">
+        <h1 id="title1">Co'CoClock Working</h1>
+
+        <section aria-label="Introduction">
+            <h2>Qui sommes-nous ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatum dignissimos quidem totam quaerat cumque aspernatur molestiae, sit ducimus esse eum delectus vel assumenda? Sint perferendis accusamus assumenda consectetur quisquam quod, sapiente dolore? Alias tempora aperiam obcaecati possimus dicta! Facilis similique consequatur est perferendis soluta minima eaque, officia tempora ea quam at natus aspernatur excepturi velit odio labore a iste, ipsa corrupti quibusdam dolore laudantium! Dolores eaque sapiente vero quas. Cumque dolor voluptatibus quae! Doloremque, debitis hic. Asperiores, doloribus iusto cupiditate dicta, eius perferendis eaque alias at, dolores architecto fugiat inventore saepe facilis ut suscipit debitis modi quos cum aliquam?</p>
+        </section>
+
+        <section aria-label="Liens pour le test de déploiement">
+            <a href="./espace.html">espace.html</a><br>
+            <a href="./espaces.html">espaces.html</a><br>
+            <a href="./login.html">login.html</a><br>
+            <a href="./register.html">register.html</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+nav {
+    display: flex;
+}
+
+nav img {
+    height: 75px;
+    width: auto;
+}
+
+nav h1 {
+    padding: 0;
+    margin:0;
+    display: none;
+}
+nav ul {
+    display: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#menubutton {
+    margin: auto 5px auto auto;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 2em;
+}
+
+.bandeau {
+    height: 200px;
+    background-image: url("./bandeau.jpg");
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 50px;
+}
+h3 {
+    font-size: 1.25em;
+}
+
+
+@media (min-width: 768px) {
+    nav h1 {
+        display: inherit;
+        margin: auto 0;
+    }
+}
+@media (min-width: 1024px) {
+    nav ul {
+        display: inherit;
+        list-style: none;
+        margin: auto 5px auto auto;
+    }
+    nav li {
+        margin: auto 15px;
+    }
+    
+    #menubutton {
+        display: none;
+    }
+}
+
+
+
+
+/* LOGIN + REGISTER*/
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 520px;
+    margin: auto;
+}
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+form input {
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    border: 1px solid black;
+}
+form input[type="submit"] {
+    background: #387ae3;
+    color: white;
+    margin-top: 25px;
+    border: none;
+    height: 40px;
+    font-size: 1.1em;
+}
+
+/* REGISTER */
+form > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.alert {
+    display: flex;
+    margin: 15px auto;
+    max-width: 520px;
+    padding: 0 15px;
+    color: white;
+    border-radius: 15px;
+}
+.alert.error {
+    background: lightcoral;
+}
+.alert.success {
+    background: lightseagreen;
+}
+.alert span {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* ESPACES */
+.spaces {
+    background: url("./espace.jpg");
+    background-size: cover;
+    max-width: 640px;
+    height: 400px;
+    margin: 0 auto 30px;
+}
+.spaces > div {
+    background: rgba(238, 238, 238, 0.849);
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    padding: 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.spaces > div > a {
+    background: #387ae3;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ESPACE */
+main .banner {
+    background: url("./espace.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.space,
+.comments {
+    margin: 30px auto 0;
+    max-width: 720px;
+}
+.comments > div {
+    background: #f7f5f5;
+    padding: 5px 10px;
+    margin: 0 0 10px;
+}
+
+@media (min-width: 1024px) {
+    main .banner {
+        height: 400px;
+    }
+}
